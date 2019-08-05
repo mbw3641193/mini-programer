@@ -1,0 +1,6 @@
+<view>
+  <text>类似于span标签</text>
+  <scroll-view>
+    
+  </scroll-view>
+</view>

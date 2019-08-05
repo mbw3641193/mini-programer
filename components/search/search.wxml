@@ -1,0 +1,5 @@
+<!--search.wxml-->
+<view class="search-bar">
+  <input class="weui-input" confirm-type="search" maxlength="10" placeholder-style="color:#3a72e1" bindinput="bindKeyInput" placeholder="搜索"/>
+  
+</view>

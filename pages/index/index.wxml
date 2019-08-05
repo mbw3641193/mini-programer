@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<view class="container">
+  <search></search>
+  <view class="index-top">
+    <view class="index-topbar">
+      <view data-src="../logs/logs" bindtap="gotoUrl">
+        <image src="../../images/index-png_03.png"></image>
+        <text>找需求</text>
+      </view>
+      <view>
+        <image src="../../images/index-png_05.png"></image>
+        <text>找专家</text>
+      </view>
+      <view>
+        <image src="../../images/index-png_07.png"></image>
+        <text>找成果</text>
+      </view>
+      <view>
+        <image src="../../images/index-png_09.png"></image>
+        <text>找服务</text>
+      </view>
+    </view>
+
+    <view class="index-swiper">
+      <swiper indicator-dots autoplay circular interval="5000" duration="500" previous-margin="0px" next-margin="0px">
+        <block wx:for="{{background}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+  </view>
+
+  <view class="index-title">
+    <text>热门需求</text>
+    <button size="mini" plain>更多</button>
+  </view>
+  <view class="index-need">
+    <view wx:for="{{needData}}" wx:key="index">
+      <text class="need-title">{{item.title}}</text>
+      <view class="need-center">
+        <view>
+          <h5>{{item.price}}
+            <span>万</span>
+          </h5>
+          <h6>计划投入</h6>
+        </view>
+        <view>
+          <h5>{{item.year}}
+            <span>年</span>
+          </h5>
+          <h6>解决期限</h6>
+        </view>
+      </view>
+      <view class="need-footer">
+        <text wx:for="{{item.label}}" wx:key="index">
+          {{item}}
+        </text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="index-title" style="border-top:10px solid #f5f5f5;">
+    <text>技术成果</text>
+    <button size="mini" plain>更多</button>
+  </view>
+  <view class="index-need" style="padding-bottom:50px;">
+    <view wx:for="{{needData}}" wx:key="index" style="padding:0; height:160px;">
+      <image src="../../images/index-png_24.png" mode="widthFix"></image>
+      <text class="need-title" style="padding:0 15px;">{{item.title}}</text>
+
+      <view class="need-footer" style="padding:0 15px;">
+        <text wx:for="{{item.label}}" wx:key="index">
+          {{item}}
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <view class="index-fixed">
+    <text>热线电话：12351</text>
+    <text style="float:right;"> 服务时间：工作日：8：30-17:00</text>
+  </view>
+
+
+
+</view>

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/innovation/innovation",
+    "pages/discovery/discovery",
+    "pages/discovery/details/details",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "威海",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "black",
+    "color":"#6b9bff",
+    "selectedColor":"#3979fd",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_select.png"
+      },
+      {
+        "pagePath": "pages/innovation/innovation",
+        "text": "创新联盟",
+        "iconPath": "/images/innovation.png",
+        "selectedIconPath": "/images/innovation_select.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "发现",
+        "iconPath": "/images/discovery.png",
+        "selectedIconPath": "/images/discovery_select.png"
+      }
+    ]
+  }
+
+}
