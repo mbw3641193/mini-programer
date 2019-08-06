@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/innovation/innovation",
     "pages/discovery/discovery",
-    "pages/discovery/details/details",
     "pages/logs/logs",
     "pages/test/test"
   ],

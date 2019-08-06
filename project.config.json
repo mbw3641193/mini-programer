@@ -44,9 +44,9 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "test",
-					"pathName": "pages/test/test",
-					"query": "id=1",
+					"name": "创新联盟",
+					"pathName": "pages/innovation/innovation",
+					"query": "",
 					"scene": null
 				}
 			]
