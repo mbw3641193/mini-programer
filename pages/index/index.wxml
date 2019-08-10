@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <search></search>
+  <!-- <search></search> -->
   <view class="index-top">
     <view class="index-topbar">
       <view data-src="../logs/logs" bindtap="gotoUrl">

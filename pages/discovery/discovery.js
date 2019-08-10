@@ -5,6 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
+    annoData:'关于组织申报2019年产学研协同产业基金项目的',
+    discoveryHeader:'../../images/discovery_07.png',
+    discoveryHeaderText:'深孔加工不再是难题！',
+    successList:[
+      {
+        title: '【美前政要商界人士联署公开信：美对华政策走向极端以元首外交引领 扩大全球朋友圈乔家大院的5A牌子被摘了',
+        url:'../../images/discovery_11.png'
+      },
+      {
+        title: '【央视独家V观】以元首外交引领 扩大全球朋友圈乔家大院的5A牌子被摘了扩大全球朋友圈乔家大院的5A牌子被摘了',
+        url: '../../images/discovery_11.png'
+      },
+      {
+        title: '【央视独家V观】以元首外交引领 扩大全球朋友圈乔家大院的5A牌子被摘了',
+        url: '../../images/discovery_11.png'
+      },
+    ]
 
   },
 

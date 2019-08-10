@@ -1,0 +1,37 @@
+<!--pages/need/need.wxml-->
+
+<view class="expert-head">
+  <button 
+  class="{{index == currentStatus?'hightlight':''}}" 
+  catchtap="filter" 
+  size="mini" 
+  plain 
+  wx:for="{{title}}" 
+  data-num="{{index}}" 
+  wx:key="index">{{item}}</button>
+</view>
+
+<view 
+class="expert-body {{index == currentStatus?'showFilter':''}}" 
+wx:for="{{title}}" 
+wx:key="index">
+  <view
+    catchtap="filterChoice" 
+    class="expert-box"
+    data-num="{{index}}" 
+    wx:for="{{list}}" 
+    wx:key="index"
+  >
+    <h4>李明</h4>
+    <text>威海锦腾汽车配件有限公司</text>
+    <image src="../../images/arrow_03.png" mode="widthFix" class="{{1 == choice[currentStatus][index]?'rotate':''}}"></image>
+    <view hidden="{{!choice[currentStatus][index]}}">
+      <h4>专长领域</h4>
+      <div>
+        <text>药食同源玫瑰花种植和繁育技术</text>
+        <text>薰衣草种植和繁育技术</text>
+        <text>玫瑰花低温加工技术</text>
+      </div>
+    </view>
+  </view>
+</view>

@@ -40,12 +40,33 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
 					"name": "创新联盟",
 					"pathName": "pages/innovation/innovation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/discovery/discovery",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "找需求",
+					"pathName": "pages/need/need",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "找专家",
+					"pathName": "pages/expert/expert",
 					"query": "",
 					"scene": null
 				}

@@ -1,2 +1,36 @@
 <!--pages/discovery/discovery.wxml-->
-<text>pages/discovery/discovery.wxml</text>
+<view class="anno">
+  <image src="../../images/discovery_03.png" mode="widthFix"></image>
+  <text>{{annoData}}</text>
+  <button size="mini" type="primary">更多</button>
+</view>
+
+<view class="index-title">
+    <text>成功案例</text>
+    <button size="mini" plain>更多</button>
+  </view>
+  <view class="discovery-success">
+    <view class="discovery-image">
+      <image src="{{discoveryHeader}}" mode="widthFix"></image>
+      <text>{{discoveryHeaderText}}</text>
+    </view>
+
+    <view class="discovery-list" wx:for="{{successList}}" wx:key="index">
+      <image src="{{item.url}}" mode="widthFix"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <view class="index-title" style="border-top:10px solid #f5f5f5;">
+    <text>新闻资讯</text>
+    <button size="mini" plain>更多</button>
+  </view>
+  <view class="discovery-success">
+    
+
+    <view class="discovery-newsList" wx:for="{{successList}}" wx:key="index">
+      
+      <text>{{item.title}}</text>
+      <h6>2019-09-28</h6>
+    </view>
+  </view>

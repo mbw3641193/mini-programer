@@ -1,5 +1,5 @@
 <!--pages/innovation/innovation.wxml-->
-<search></search>
+<!-- <search></search> -->
 
 <view class="index-need" scroll-y>
   <view wx:for="{{loadData}}" wx:key="index" style="padding:0;">
