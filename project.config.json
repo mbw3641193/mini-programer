@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 9,
 			"list": [
 				{
 					"id": 0,
@@ -68,6 +68,47 @@
 					"name": "找专家",
 					"pathName": "pages/expert/expert",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新闻详情",
+					"pathName": "pages/newsDetail/newsDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "专家详情",
+					"pathName": "pages/expertDetail/expertDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "服务详情",
+					"pathName": "pages/serviceDetail/serviceDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "需求详情",
+					"pathName": "pages/needDetail/needDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "成果详情",
+					"pathName": "pages/gainDetail/gainDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "xx列表",
+					"pathName": "pages/list/list",
 					"scene": null
 				}
 			]

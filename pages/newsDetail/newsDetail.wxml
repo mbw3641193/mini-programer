@@ -1,0 +1,7 @@
+<view class="newsPage">
+  <h4>新物种爆炸·吴声商业方法发布2019 · 3小时全文实录</h4>
+  <h5>2019年8月4日</h5>
+  <text>一名代号为Felix的俄罗斯安全员在本周披露了Windows版Steam客户端程序，存在一个可扩大权限的零日漏洞，可影响超过1.7亿名的Steam注册玩家。该漏洞允许攻击者获得管理员权限，进而在系统上执行任意代码。</text>
+  <text>据Felix指出，Steam的客户端程序有一项基于系统权限执行的Steam Client Service功能。奇怪的是来自“使用者”（Users）群组的任何人，都有权启用或关闭该功能，随后他发现所有使用者都能访问该功能的登录机码，也让攻击者方便利用其来扩张权限。</text>
+  <text>Steam是美国公司Valve所开发的游戏分发平台，它支持Windows、macOS、Linux、Android与iOS等平台。根据Steam Spy的估计，Steam的全球用户数超过2.4亿，而Steam今年7月的调查则显示，约有71.5%的用户使用Windows 10操作系统，代表至少有1.7亿的用户受到该漏洞影响。</text>
+</view>

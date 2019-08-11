@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    annoData:'关于组织申报2019年产学研协同产业基金项目的',
+    annoData:'关于组织申报2019年产学研协同产业基金项目的关于组织申报2019年产学研协同产业基金项目的',
     discoveryHeader:'../../images/discovery_07.png',
     discoveryHeaderText:'深孔加工不再是难题！',
     successList:[
@@ -24,7 +24,13 @@ Page({
     ]
 
   },
+  gotoUrl: function (e) {
 
+    var src = e.currentTarget.dataset.src;
+    wx.navigateTo({
+      url: src
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

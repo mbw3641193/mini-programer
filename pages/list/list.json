@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "xx列表",
+  "usingComponents": {
+    "search": "../../components/search/search"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "onReachBottomDistance": 300
+}

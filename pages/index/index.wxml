@@ -3,19 +3,19 @@
   <!-- <search></search> -->
   <view class="index-top">
     <view class="index-topbar">
-      <view data-src="../logs/logs" bindtap="gotoUrl">
+      <view data-src="../need/need" bindtap="gotoUrl">
         <image src="../../images/index-png_03.png"></image>
         <text>找需求</text>
       </view>
-      <view>
+      <view data-src="../expert/expert" bindtap="gotoUrl">
         <image src="../../images/index-png_05.png"></image>
         <text>找专家</text>
       </view>
-      <view>
+      <view data-src="../gainDetail/gainDetail" bindtap="gotoUrl">
         <image src="../../images/index-png_07.png"></image>
         <text>找成果</text>
       </view>
-      <view>
+      <view data-src="../serviceDetail/serviceDetail" bindtap="gotoUrl">
         <image src="../../images/index-png_09.png"></image>
         <text>找服务</text>
       </view>
@@ -35,7 +35,7 @@
 
   <view class="index-title">
     <text>热门需求</text>
-    <button size="mini" plain>更多</button>
+    <button size="mini" plain data-src="../need/need" bindtap="gotoUrl">更多</button>
   </view>
   <view class="index-need">
     <view wx:for="{{needData}}" wx:key="index">
@@ -65,7 +65,7 @@
 
   <view class="index-title" style="border-top:10px solid #f5f5f5;">
     <text>技术成果</text>
-    <button size="mini" plain>更多</button>
+    <button size="mini" plain data-src="../gainDetail/gainDetail" bindtap="gotoUrl">更多</button>
   </view>
   <view class="index-need" style="padding-bottom:50px;">
     <view wx:for="{{needData}}" wx:key="index" style="padding:0; height:160px;">

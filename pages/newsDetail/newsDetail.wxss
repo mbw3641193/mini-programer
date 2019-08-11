@@ -1,0 +1,23 @@
+/* pages/newsDetail/newsDetail.wxss */
+.newsPage{
+  padding: 15px 20px;
+}
+.newsPage h4{
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+.newsPage h5{
+  display: block;
+  font-size: 14px;
+  color: #999;
+  padding: 10px 0 20px;
+}
+.newsPage text{
+  font-size: 14px;
+  text-indent: 2em;
+  display: block;
+  padding-bottom: 10px;
+  color: #666;
+  line-height: 25px;
+}

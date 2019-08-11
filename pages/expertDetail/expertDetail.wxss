@@ -1,0 +1,101 @@
+page {
+  background-color: #f5f5f5;
+  
+}
+swiper{
+  overflow:visible;
+}
+.index-swiper{
+  height: 100vh;
+  box-sizing: border-box;
+ 
+  
+}
+swiper-item{
+  overflow: initial;
+}
+.expertSwiper{
+  box-sizing: border-box;
+  margin: 25px 5px;
+  background-color: #fff;
+  height:calc(100% - 80px);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  overflow: hidden;
+  
+  
+}
+.index-fixed{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  line-height: 30px;
+  font-size: 12px;
+  color: #3669f8;
+  box-sizing: border-box;
+  padding:0 15px;
+  background-color: #f1f5fe;
+  z-index: 10;
+}
+.expert-swiper-title{
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #3669f8;
+  display: block;
+  border-bottom: 1px solid #3669f8;
+  padding-top: 15px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 10px;
+}
+.expert-swiper-title h5{
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 10px;
+  background-color: #e5f0fe;
+  line-height: 0;
+  color: #83a7ee;
+}
+.expert-swiper-title h5 image{
+  width: 10px;
+  vertical-align: -3px;
+  margin-left: 5px;
+}
+.expert-swiper-title>image{
+  width: 50px;
+  position:absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: 60px;
+}
+
+.expert-swiper-inner{
+  overflow: hidden;
+  padding: 10px 0;
+}
+.expert-swiper-inner image{
+  float: left;
+  width: 20px;
+
+}
+.expert-swiper-inner view{
+  float: left;
+  width: calc(100% - 30px);
+  padding-left: 10px;
+}
+.expert-swiper-inner view h5{
+  display: block;
+  font-size: 15px;
+  color:#3669f8;
+}
+.expert-swiper-inner view text{
+  display: block;
+  font-size: 14px;
+  color: #999;
+  padding-top: 5px;
+}

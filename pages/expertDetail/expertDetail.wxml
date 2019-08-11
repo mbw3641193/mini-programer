@@ -1,0 +1,68 @@
+
+<view class="index-swiper">
+      <swiper style="height:100%;" previous-margin="20px" next-margin="20px" bindchange="change" current="{{currentIndex}}">
+        <block wx:for="{{personList}}" wx:key="index">
+          <swiper-item>
+          <view class="expertSwiper">
+            <scroll-view scroll-y style="height:100%; padding:0px 15px; box-sizing:border-box;">
+              <h4 class="expert-swiper-title">{{item.title}}
+                <h5>{{item.tag}}<image src="../../images/details_03.png" mode="widthFix"></image></h5>
+                <image src="../../images/detais_07.png" mode="widthFix"></image>
+              </h4>
+
+              <view class="expert-swiper-inner">
+                <image src="../../images/details_07.png" mode="widthFix"></image>
+                <view>
+                  <h5>所属机构</h5>
+                  <text>{{item.organ?item.organ:'暂无'}}</text>
+                </view>
+              </view>
+
+
+              <view class="expert-swiper-inner">
+                <image src="../../images/details_11.png" mode="widthFix"></image>
+                <view>
+                  <h5>专长领域</h5>
+                  <text wx:for="{{item.special}}" wx:key="index">{{item}}</text>
+                </view>
+              </view>
+
+              <view class="expert-swiper-inner">
+                <image src="../../images/details_15.png" mode="widthFix"></image>
+                <view>
+                  <h5>详情介绍</h5>
+                  <text>{{item.detail?item.detail:'暂无'}}</text>
+                </view>
+              </view>
+
+              <view class="expert-swiper-inner">
+                <image src="../../images/details_19.png" mode="widthFix"></image>
+                <view>
+                  <h5>科技成果</h5>
+                  <text>{{item.gain?item.gain:'暂无'}}</text>
+                </view>
+              </view>
+
+              <view style="text-align:center;">
+                <image src="../../images/details_23.png" style="width:150px;" mode="widthFix"></image>
+                
+                
+              </view>
+
+
+              
+            </scroll-view>
+          </view>
+           
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+
+    <view class="index-fixed">
+    <text>热线电话：12351</text>
+    <text style="float:right;"> 服务时间：工作日：8：30-17:00</text>
+  </view>
+
+

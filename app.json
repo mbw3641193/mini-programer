@@ -5,6 +5,12 @@
     "pages/discovery/discovery",
     "pages/need/need",
     "pages/expert/expert",
+    "pages/newsDetail/newsDetail",
+    "pages/expertDetail/expertDetail",
+    "pages/serviceDetail/serviceDetail",
+    "pages/needDetail/needDetail",
+    "pages/gainDetail/gainDetail",
+    "pages/list/list",
     "pages/logs/logs",
     "pages/test/test"
   ],

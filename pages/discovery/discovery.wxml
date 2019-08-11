@@ -2,15 +2,15 @@
 <view class="anno">
   <image src="../../images/discovery_03.png" mode="widthFix"></image>
   <text>{{annoData}}</text>
-  <button size="mini" type="primary">更多</button>
+  <!-- <button size="mini" type="primary">更多</button> -->
 </view>
 
 <view class="index-title">
     <text>成功案例</text>
-    <button size="mini" plain>更多</button>
+    <button size="mini" plain data-src="../list/list" bindtap="gotoUrl">更多</button>
   </view>
   <view class="discovery-success">
-    <view class="discovery-image">
+    <view class="discovery-image" data-src="../newsDetail/newsDetail" bindtap="gotoUrl">
       <image src="{{discoveryHeader}}" mode="widthFix"></image>
       <text>{{discoveryHeaderText}}</text>
     </view>
@@ -23,7 +23,7 @@
 
   <view class="index-title" style="border-top:10px solid #f5f5f5;">
     <text>新闻资讯</text>
-    <button size="mini" plain>更多</button>
+    <button size="mini" plain data-src="../list/list" bindtap="gotoUrl">更多</button>
   </view>
   <view class="discovery-success">
     
