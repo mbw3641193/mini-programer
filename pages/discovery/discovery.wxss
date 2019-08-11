@@ -1,28 +1,30 @@
 .anno{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  overflow: hidden;
   box-sizing: border-box;
   padding: 10px 15px;
   border-bottom: 10px solid #f5f5f5;
 }
 .anno image{
-  width: 35px;
+  float: left;
+  width: 20px;
   margin-right: 10px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .anno text{
+  float: left;
+  width: calc(100% - 100px);
   font-size: 14px;
+  line-height: 25px;
   color: #3a72e1;
   overflow: hidden;    
   text-overflow: ellipsis; 
   white-space: nowrap; 
 }
 .anno button{
+  float: right;
   height:25px;
   padding: 0;
-  width: 60px;
+  width: 50px;
   line-height: 25px;
   margin-left: 10px;
 }

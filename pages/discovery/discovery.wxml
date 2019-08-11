@@ -2,7 +2,7 @@
 <view class="anno">
   <image src="../../images/discovery_03.png" mode="widthFix"></image>
   <text>{{annoData}}</text>
-  <!-- <button size="mini" type="primary">更多</button> -->
+  <button size="mini" type="primary" data-src="../list/list" bindtap="gotoUrl">更多</button>
 </view>
 
 <view class="index-title">
