@@ -10,6 +10,7 @@
     "pages/serviceDetail/serviceDetail",
     "pages/needDetail/needDetail",
     "pages/gainDetail/gainDetail",
+    "pages/needlist/needlist",
     "pages/list/list",
     "pages/logs/logs",
     "pages/test/test"

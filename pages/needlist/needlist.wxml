@@ -1,0 +1,28 @@
+<!--pages/innovation/innovation.wxml-->
+<!-- <search></search> -->
+
+<view class="index-need" scroll-y>
+  <view wx:for="{{loadData}}" wx:key="index">
+      <text class="need-title">{{item.title}}</text>
+      <view class="need-center">
+        <view>
+          <h5>{{item.price}}
+            <span>万</span>
+          </h5>
+          <h6>计划投入</h6>
+        </view>
+        <view>
+          <h5>{{item.year}}
+            <span>年</span>
+          </h5>
+          <h6>解决期限</h6>
+        </view>
+      </view>
+      <view class="need-footer">
+        <text wx:for="{{item.label}}" wx:key="index">
+          {{item}}
+        </text>
+      </view>
+    </view>
+</view>
+<text class="loading-bottom">{{loadingText}}</text>

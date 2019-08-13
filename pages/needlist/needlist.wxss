@@ -1,68 +1,83 @@
-/**index.wxss**/
-@import "../../libs/weui.wxss";
 
-.index-top {
-  background-color: #f5f5f5;
-  padding:10px 15px;
-  padding-bottom: 0px;
+.index-need{
+  overflow: hidden;
+  padding: 10px;
 }
-
-.index-topbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20rpx 30rpx;
+.index-need>view{
+  float: left;
+  width: calc(50% - 10px);
   box-sizing: border-box;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 5px 5px rgba(0,0,0, .1)
+  margin: 5px;
+  box-shadow: 0px 5px 5px rgba(0,0,0, .1);
+  padding: 10px;
+  
+ 
+  border-radius: 4px;
+  height: 130px;
+  overflow: hidden;
 }
-.index-topbar view{
+.need-title{
+  font-size: 14px;
   text-align: center;
+  display: block;
+  overflow: hidden;    
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  color: #3669f8;
 
 }
-.index-topbar image{
-  width: 35px;
-  height:35px;
-  margin-left: 5px;
+.need-center{
+  overflow: hidden;
+  padding-top: 10px;
 }
-.index-topbar text{
+.need-center>view{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  color: #3669f8;
+}
+.need-center>view:first-child{
+  border-right: 1px solid #eee;
+}
+.need-center>view h5{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+.need-center>view h5 span{
+  font-size: 14px;
+
+}
+.need-center>view h6{
   display: block;
   font-size: 12px;
-  color: #3669f8;
+  text-align: center;
+  color: #999999;
 }
-.index-swiper{
-  margin: 15px 0 0;
-  border-radius: 5px;
-  overflow: hidden;
-  padding-bottom: 10px;
+.need-footer{
+  padding-top: 3px;
 }
-
-.index-swiper swiper-item{
-  border-radius: 5px;
+.need-footer>text{
+  font-size: 12px;
+  line-height: 0;
+  height: 0;
+  display: inline-block;
+  background-color: #f9eeda;
+  padding: 10px 5px;
+  margin-right: 5px;
+  color: #f2b308;
 }
-.index-swiper swiper-item image{
+.index-need image{
   width: 100%;
-  height: 100%;
+  
 }
-.index-title{
-  padding: 6px 15px;
-  overflow: hidden;
-  border-bottom: 2px solid #3669f8;
-}
-.index-title text{
-  font-size: 14px;
-  color: #3669f8;
-  font-weight: 600;
-}
-.index-title button{
-  float: right;
-  line-height: 25px;
-  border: none 0;
-  color: #3669f8;
-  margin-right: -15px;
+.loading-bottom{
+  display: block;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
 }
 .index-need{
   overflow: hidden;
@@ -85,6 +100,7 @@
   font-size: 14px;
   text-align: center;
   display: block;
+  line-height: 22px;
   overflow: hidden;    
   text-overflow: ellipsis; 
   white-space: nowrap; 
@@ -133,20 +149,4 @@
   margin-right: 5px;
   margin-bottom: 15px;
   color: #f2b308;
-}
-.index-need image{
-  width: 100%;
-  
-}
-.index-fixed{
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  line-height: 30px;
-  font-size: 12px;
-  color: #3669f8;
-  box-sizing: border-box;
-  padding:0 15px;
-  background-color: #f1f5fe;
-  z-index: 10;
 }
