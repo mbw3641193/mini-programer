@@ -1,6 +1,6 @@
 <!--pages/discovery/discovery.wxml-->
 <view class="anno">
-  <image src="../../images/discovery_03.png" mode="widthFix"></image>
+  <image src="../../images/hot_06.png" mode="widthFix"></image>
   <text>{{annoData}}</text>
   <button size="mini" type="primary" data-src="../list/list" bindtap="gotoUrl">更多</button>
 </view>
@@ -10,14 +10,15 @@
     <button size="mini" plain data-src="../list/list" bindtap="gotoUrl">更多</button>
   </view>
   <view class="discovery-success">
-    <view class="discovery-image" data-src="../newsDetail/newsDetail" bindtap="gotoUrl">
+    <!-- <view class="discovery-image" data-src="../newsDetail/newsDetail" bindtap="gotoUrl">
       <image src="{{discoveryHeader}}" mode="widthFix"></image>
       <text>{{discoveryHeaderText}}</text>
-    </view>
+    </view> -->
 
     <view class="discovery-list" wx:for="{{successList}}" wx:key="index">
       <image src="{{item.url}}" mode="widthFix"></image>
       <text>{{item.title}}</text>
+      <span>2019-07-10</span>
     </view>
   </view>
 
@@ -29,7 +30,7 @@
     
 
     <view class="discovery-newsList" wx:for="{{successList}}" wx:key="index">
-      
+      <span></span>
       <text>{{item.title}}</text>
       <h6>2019-09-28</h6>
     </view>

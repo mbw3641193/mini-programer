@@ -15,15 +15,31 @@
 </view>
 
 
-<view class="expert" scroll-y>
-    <view wx:for="{{loadData}}" wx:key="index" data-src="../needDetail/needDetail" bindtap="gotoUrl">
-      
-      <view class="title">辛晓伟
-        <h3><image class="search" src="../../images/newIcon2_03.png" mode="widthFix"></image>专家</h3>
+
+
+  <view class="index-need" scroll-y>
+    <view wx:for="{{needData}}" wx:key="index">
+      <b>待合作</b>
+      <text class="need-title">{{item.title}}</text>
+      <view class="need-center">
+        <view>
+          <h5>{{item.price}}
+            <span>万</span>
+          </h5>
+          <h6>计划投入</h6>
+        </view>
+        <view>
+          <h5>{{item.year}}
+            <span>年</span>
+          </h5>
+          <h6>解决期限</h6>
+        </view>
       </view>
-      <h4><image class="search" src="../../images/newIcon2_07.png" mode="widthFix"></image>行业：机械/机械输送</h4>
-      <h4><image class="search" src="../../images/newIcon2_10.png" mode="widthFix"></image>所属机构：山东药品食品职业学院</h4>
-      
+      <view class="need-footer">
+        <text wx:for="{{item.label}}" wx:key="index">
+          {{item}}
+        </text>
+      </view>
     </view>
   </view>
 

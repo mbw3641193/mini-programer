@@ -1,31 +1,31 @@
 <!--pages/need/need.wxml-->
-<view bindtap="closefilter">
-  <view class="need-title">
-    <text>分类</text>
-    <image  catchtap="changefilterBool" src="../../images/filter_03.png" mode="widthFix"></image>
-    <view class="filterBox" hidden="{{filterBool}}">
-      <view class="filterLeft">
-        <button class="{{index == currentStatus?'hightlight':''}}" catchtap="filter" size="mini" plain wx:for="{{filter}}" data-num="{{index}}" wx:key="index">{{item.title}}</button>
-      </view>
-      <view class="filterRight {{index == currentStatus?'showFilter':''}}" wx:for="{{filter}}" wx:key="index">
-        <button catchtap="filterChoice" class="{{index == choice[currentStatus]?'hightlight':''}}" data-num="{{index}}" size="mini" plain wx:for="{{item.desc}}" wx:key="index">{{item}}</button>
+<view class="filterBox">
+  <view class="filter">
+    <input class="weui-input" confirm-type="search" maxlength="10" placeholder-style="color:#999" bindinput="bindKeyInput" placeholder="请输入成果名称"/>
+    <image class="search" src="../../images/search1_03.png" mode="widthFix"></image>
+    <view class="fliter-this" bindtap="gotoDetail">
+      筛选<image src="../../images/filter1_03.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="filter-item">
+    <h5 wx:for="{{filterData}}" wx:key="index">
+          {{item}}<image class="search" src="../../images/close_07.png" mode="widthFix" bindtap="removeFilter" data-id="{{index}}"></image>
+        </h5>
+  </view>
+</view>
+
+
+<view class="cg" scroll-y>
+    <view wx:for="{{loadData}}" wx:key="index" data-src="../needDetail/needDetail" bindtap="gotoUrl">
+      <image src="../../images/sec-indeximg_35.png" mode="widthFix"></image>
+      <text class="need-title" style="padding:5px 15px; padding-left:0; padding-top:0; text-align:left; margin-left:80px; border-bottom: 1px solid #f0f1f4;">{{item.title}}</text>
+      <span>行业：机械/机械输送</span>
+      <view class="need-footer" style="padding:0 15px; padding-left:80px; margin-top:-5px;">
+        <text wx:for="{{item.label}}" wx:key="index">
+          {{item}}
+        </text>
       </view>
     </view>
   </view>
 
-  <view class="need-main">
-    <scroll-view class="need-scroll" scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
-      <view class="need-item {{index == currentTab?'hightlight':''}}" wx:for="{{needTitleList}}" wx:key="index" data-num="{{index}}" bindtap="select">{{item}}</view>
-    </scroll-view>
-
-    <scroll-view scroll-y class="need-inner {{index == currentTab?'showInner':''}}" wx:for="{{needInnerList}}" wx:key="index">
-      <h6>{{item.title}}</h6>
-      <view>
-        <button size="mini" plain wx:for="{{item.desc}}" wx:key="index">{{item}}</button>
-      </view>
-    </scroll-view>
-
-
-
-  </view>
-</view>
+<text class="loading-bottom">{{loadingText}}</text>

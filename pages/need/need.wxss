@@ -1,123 +1,168 @@
 
-.need-title{
-  height: 50px;
-  box-sizing: border-box;
-  padding: 10px 15px;
-  border-bottom: 10px solid #f5f5f5;
-  position: relative;
-}
-.filterBox{
-  width: 150px;
-  height: 200px;
-  position: absolute;
-  right: 15px;
-  top: 45px;
-  z-index: 100;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+.index-need{
   overflow: hidden;
+  padding: 10px;
 }
-.filterLeft{
+.index-need>view{
   float: left;
-  text-align: center;
-  padding-top: 10px;
-  width: 50%;
-  overflow: hidden;
-  height: 100%;
+  width: calc(50% - 10px);
   box-sizing: border-box;
+  margin: 5px;
+  box-shadow: 0px 5px 5px rgba(0,0,0, .1);
+  padding: 10px;
+  
+ 
+  border-radius: 4px;
+  height: 130px;
+  overflow: hidden;
+}
+.need-title{
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  overflow: hidden;    
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  color: #3669f8;
+
+}
+.need-center{
+  overflow: hidden;
+  padding-top: 10px;
+}
+.need-center>view{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  color: #3669f8;
+}
+.need-center>view:first-child{
   border-right: 1px solid #eee;
 }
-.filterLeft button{
-  padding: 0;
-  border: none 0;
-}
-.filterLeft button.hightlight{
-  color: #3a72e1;
-  font-weight: bold;
-}
-
-.filterRight{
-  float: left;
+.need-center>view h5{
+  display: block;
+  font-size: 18px;
   text-align: center;
-  padding-top: 10px;
-  width: 50%;
-  overflow: hidden;
-  height: 100%;
-  display: none;
-  
 }
-.filterRight.showFilter{
-  display: block;
-}
-.filterRight button{
-  padding: 0;
-  display: block;
-  border: none 0;
-}
-.filterRight button.hightlight{
-  color: #3a72e1;
-  font-weight: bold;
-}
-
-
-.need-title text{
-  font-size: 16px;
-  font-weight: bold;
-  color: #3a72e1;
-}
-.need-title image{
-  float: right;
-  width: 20px;
-  margin-top: 3px;
-}
-
-.need-main{
-  overflow: hidden;
-}
-.need-item{
-  line-height: 50px;
-  
-  color: #7ea8fc;
-  font-size: 15px;
-}
-.need-item.hightlight{
-  color: #3a72e1;
-  font-weight: bold;
-}
-.need-scroll{
-  float: left;
-  width: 85px;
-  height: calc(100vh - 50px);
-  padding-left:15px;
-  border-right: 10px solid #f5f5f5;
-}
-.need-inner{
-  float: left;
-  box-sizing: border-box;
-  padding: 10px 15px;
-  width: calc(100% - 110px);
-  height: calc(100vh - 50px);
-  display: none;
-}
-.need-inner.showInner{
-  display: block;
-}
-.need-inner h6{
-  color: #3a72e1;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 5px 0 10px;
-  display: block;
-  border-bottom: 2px solid #3a72e1;
-}
-.need-inner view{
-  padding: 10px 0;
-}
-.need-inner view button{
+.need-center>view h5 span{
   font-size: 14px;
-  padding: 3px 8px;
-  border: none 0;
-  color: #666;
+
+}
+.need-center>view h6{
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #999999;
+}
+.need-footer{
+  padding-top: 3px;
+}
+.need-footer>text{
+  font-size: 12px;
+  line-height: 0;
+  height: 0;
+  display: inline-block;
+  background-color: #f9eeda;
+  padding: 10px 5px;
+  margin-right: 5px;
+  color: #f2b308;
+}
+.index-need image{
+  width: 100%;
+  
+}
+.loading-bottom{
+  display: block;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  color: #999;
+}
+.filterBox{
+  
+  padding: 10px 15px;
+}
+.filter{
+  overflow: hidden;
+  position: relative;
+}
+.filter .search{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right:80px;
+  top: 6px;
+}
+.weui-input{
+  float: left;
+  width: calc(100% - 70px);
+  
+  background-color: #f6f7f9;
+  font-size: 14px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-radius: 30px;
+
+}
+.fliter-this{
+  float: right;
+  width: 70px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 30px;
+}
+.fliter-this image{
+  width: 20px;
+  height: 20px;
+  vertical-align: -3px;
+  margin-left: 5px;
+}
+.cg image{
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+.cg{
+  padding: 15px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 50px);
+}
+.cg>view{
+
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0, .1);
+  padding: 10px;
+  height: 90px;
+  border-radius: 5px;
   margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.cg>view span{
+  font-size: 12px;
+  color: #999;
+  display: block;
+  padding-left: 80px;
+  padding-top: 3px;
+}
+.filter-item{
+  padding-top: 10px;
+}
+.filter-item h5{
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #e9eaed;
+  padding: 10px 10px;
+  line-height: 0;
+  margin-right: 5px;
+}
+.filter-item h5 image{
+  width: 12px;
+  height: 12px;
+  vertical-align: -1px;
+  margin-left: 10px;
 }

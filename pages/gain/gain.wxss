@@ -166,55 +166,94 @@
   vertical-align: -1px;
   margin-left: 10px;
 }
-
-.expert{
-  padding: 15px;
+.index-need{
+  overflow: hidden;
+  padding: 10px;
   background-color: #f5f5f5;
-  min-height: calc(100vh - 50px);
 }
-.expert>view{
-
+.index-need>view{
+  float: left;
+  width: calc(50% - 10px);
   box-sizing: border-box;
-  background-color: #fff;
+  margin: 5px;
   box-shadow: 0px 0px 10px rgba(0,0,0, .1);
   padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  padding-top: 25px;
+  border-radius: 4px;
+  height: 150px;
   overflow: hidden;
   position: relative;
 }
-.expert>view>view{
-  font-size: 15px;
-  padding-bottom: 5px;
-  overflow: hidden;
-  border-bottom: 1px solid #eee;
-}
-.expert>view>view h3{
-  float: right;
-  margin-top: 3px;
-  font-size: 12px;
-  padding: 0 10px;
-  border-radius: 20px;
-  background-color: #e5edff;
-  color: #3878f6;
-  line-height: 0;
-  
-}
-.expert>view>view h3 image{
-  width: 18px;
-  height: 18px;
-  vertical-align: -6px;
-  margin-right: 5px;
-}
-.expert>view h4{
-  font-size: 14px;
-  color: #999;
+.index-need>view b{
+  position: absolute;
+  right: 0;
+  top: 0;
   display: block;
-  padding-top: 5px;
+  width: 50px;
+  height: 20px;
+  background-color: #ff484a;
+  color: #fff;
+  box-sizing: border-box;
+  padding-left: 5px;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
 }
-.expert>view h4 image{
-  width: 18px;
-  height: 18px;
-  vertical-align: -4px;
+.need-title{
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  overflow: hidden;    
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  color: #333;
+
+}
+.need-center{
+  overflow: hidden;
+  padding-top: 10px;
+  height: 50px;
+}
+.need-center>view{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  color: #333;
+}
+.need-center>view:first-child{
+  border-right: 1px solid #eee;
+}
+.need-center>view h5{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+.need-center>view h5 span{
+  font-size: 14px;
+  font-weight: normal;
+
+}
+.need-center>view h6{
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #999999;
+}
+.need-footer{
+  padding-top: 3px;
+}
+.need-footer>text{
+  font-size: 11px;
+  line-height: 0;
+  height: 0;
+  display: inline-block;
+  background-color: #eff4fe;
+  padding: 10px 3px;
   margin-right: 5px;
+  margin-bottom: 15px;
+  color: #3878f6;
+}
+.index-need image{
+  width: 100%;
+  
 }

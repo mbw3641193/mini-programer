@@ -4,13 +4,16 @@
     "pages/innovation/innovation",
     "pages/discovery/discovery",
     "pages/need/need",
+    "pages/needFilter/needFilter",
     "pages/expert/expert",
     "pages/newsDetail/newsDetail",
     "pages/expertDetail/expertDetail",
     "pages/serviceDetail/serviceDetail",
     "pages/needDetail/needDetail",
+    "pages/gain/gain",
     "pages/gainDetail/gainDetail",
     "pages/needlist/needlist",
+    "pages/case/case",
     "pages/list/list",
     "pages/logs/logs",
     "pages/test/test"
@@ -25,7 +28,7 @@
   "tabBar": {
     "position": "bottom",
     "borderStyle": "black",
-    "color":"#6b9bff",
+    "color":"#999",
     "selectedColor":"#3979fd",
     "list": [
       {

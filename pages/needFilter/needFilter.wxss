@@ -1,0 +1,47 @@
+/* pages/needFilter/needFilter.wxss */
+.filter{
+  padding: 10px 15px;
+}
+.filter h4{
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+.filter view{
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.filter text{
+  display: inline-block;
+  font-size: 14px;
+  background-color: #f3f4f6;
+  color: #999;
+  padding: 16px 12px;
+  line-height: 0;
+  margin-right: 5px;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width:100%;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.footer button{
+  display: inline-block;
+  width: 30%;
+  height: 38px;
+  line-height: 38px;
+  margin-top: 6px;
+  padding: 0;
+  margin-right: 10px;
+  border-radius: 40px;
+  font-size: 14px;
+  color: #999;
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+button::after {
+  border: none
+}

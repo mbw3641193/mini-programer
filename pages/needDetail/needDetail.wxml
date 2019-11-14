@@ -1,76 +1,34 @@
-
-<view class="index-swiper">
-      <swiper style="height:100%;" previous-margin="20px" next-margin="20px" bindchange="change" current="{{currentIndex}}">
-        <block wx:for="{{personList}}" wx:key="index">
-          <swiper-item>
-          <view class="expertSwiper">
-            <scroll-view scroll-y style="height:100%; padding:0px 15px; box-sizing:border-box;">
-              <h4 class="expert-swiper-title">
-                <text>{{item.title}}</text>
-                <image src="../../images/detais_07.png" mode="widthFix"></image>
-              </h4>
-
-              <view class="need-detail-tag">
-                <text wx:for="{{item.tag}}" wx:key="index">{{item}}</text>
-              </view>
-
-              <view class="need-detail-center">
-                <view wx:for="{{item.detail}}" wx:key="index">
-                  <text>{{item.name}}</text>
-                  <h6>{{item.desc}}</h6>
-                </view>
-                
-              </view>
-
-              <view class="expert-swiper-inner">
-                <image src="../../images/needd_03.png" mode="widthFix"></image>
-                <view>
-                  <h5>解决方式</h5>
-                  <text>{{item.solve?item.solve:'暂无'}}</text>
-                </view>
-              </view>
-
-              <view class="expert-swiper-inner">
-                <image src="../../images/needd_06.png" mode="widthFix"></image>
-                <view>
-                  <h5>合作方式</h5>
-                  <text>{{item.cooperate?item.cooperate:'暂无'}}</text>
-                </view>
-              </view>
-
-              <view class="expert-swiper-inner">
-                <image src="../../images/needd_09.png" mode="widthFix"></image>
-                <view>
-                  <h5>需求详情</h5>
-                  <text>{{item.need?item.need:'暂无'}}</text>
-                </view>
-              </view>
-
-              <view style="text-align:center; margin-top:20px;">
-                <image src="../../images/needd_13.png" style="width:150px;" mode="widthFix"></image>
-                
-                
-              </view>
-
-
-              
-
-              
-
-
-              
-            </scroll-view>
-          </view>
-           
-          </swiper-item>
-        </block>
-      </swiper>
+<view class="needDetail">
+  <view class="needDetail-top">
+    <h4>锚泊式电子信息浮台</h4>
+    <view>
+      <text wx:for="{{personList[0].tag}}" wx:key="index">
+            {{item}}
+      </text>
     </view>
-
-
-    <view class="index-fixed">
-    <text>热线电话：12351</text>
-    <text style="float:right;"> 服务时间：工作日：8：30-17:00</text>
+    <h5><image src="../../images/newIcon1_03.png" mode="widthFix"></image>成果所属：哈尔滨工业大学（威海） </h5>
+    <h5><image src="../../images/newIcon1_03.png" mode="widthFix"></image>成果行业：海洋开发/其他海洋开发 </h5>
+    <h5><image src="../../images/newIcon1_03.png" mode="widthFix"></image>技术类型：专利 </h5>
+    <h5><image src="../../images/newIcon1_03.png" mode="widthFix"></image>发布时间：2019-10-09  </h5>
   </view>
 
+  <view class="text">- 成果说明 -</view>
 
+  <view class="needDetail-top">
+    <h4 style="color:#3878f6;font-weight:bold;"><image src="../../images/newIcon1_13.png" mode="widthFix"></image>技术成熟度</h4>
+    <h6>通过小试</h6>
+    
+    <h4 style="color:#3878f6;font-weight:bold;"><image src="../../images/newIcon1_13.png" mode="widthFix"></image>成果详情</h4>
+    <h6>锚泊式电子信息浮台作为一种新型的半潜式海洋环境监测
+平台：结合了传统的海洋平台和海洋环境观测浮标二者的
+优点，无人看守的、能够实时、连续地对海上各种环境要
+素进行观测的新型载体。集太阳能、风能为一体，通过在
+浮台上安装任务系统，可以对海上各种环境要素进行实时
+地、连续地观测。应用领域：通过在海上多点布放浮台，
+实现与卫星、飞机、海洋调查船、海监船和深潜器等构成
+立体的海洋监测网络系统。</h6>
+
+    <h4 style="color:#3878f6;font-weight:bold;"><image src="../../images/newIcon1_13.png" mode="widthFix"></image>成果附件</h4>
+    <image src="../../images/discovery_07.png" mode="widthFix"></image>
+  </view>
+</view>

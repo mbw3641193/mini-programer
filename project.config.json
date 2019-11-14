@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 13,
 			"list": [
 				{
 					"id": 0,
@@ -116,6 +116,27 @@
 					"id": -1,
 					"name": "需求列表",
 					"pathName": "pages/needlist/needlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "成功案例",
+					"pathName": "pages/case/case",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "needFilter",
+					"pathName": "pages/needFilter/needFilter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "gain",
+					"pathName": "pages/gain/gain",
 					"scene": null
 				}
 			]

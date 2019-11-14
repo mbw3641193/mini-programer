@@ -4,7 +4,7 @@
 
 Page({
   data: {
-    background: ['../../images/index-png_16.png', '../../images/index-png_16.png', '../../images/index-png_16.png'],
+    background: ['../../images/sec-indeximg_03.png', '../../images/sec-indeximg_03.png', '../../images/sec-indeximg_03.png'],
     needData:[
       {
         title:'铝合金车轮轻铝合金车轮轻量技术量技术',

@@ -1,0 +1,21 @@
+<!--pages/needFilter/needFilter.wxml-->
+<view class="filter">
+  <h4>技术成熟度</h4>
+  <view>
+  <text bindtap="changeColor" data-id="{{index}}" data-name="{{item}}" wx:for="{{filterData}}" wx:key="index" style="background-color:{{pageBackgroundColor[index]}}; color:{{pageColor[index]}}">
+          {{item}}
+        </text>
+        </view>
+
+        <h4>技术成熟度</h4>
+  <view>
+  <text bindtap="changeColor1" data-id="{{index}}" data-name="{{item}}" wx:for="{{filterData1}}" wx:key="index" style="background-color:{{pageBackgroundColor1[index]}}; color:{{pageColor1[index]}}">
+          {{item}}
+        </text>
+        </view>
+</view>
+
+<view class="footer">
+  <button>重置</button>
+  <button style="background-color:#f47411;border-color:#f47411;color:#fff;" bindtap="goback">确定</button>
+</view>

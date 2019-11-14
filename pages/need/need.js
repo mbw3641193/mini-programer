@@ -5,83 +5,146 @@ Page({
    * 页面的初始数据
    */
   data: {
-    show:true,
-    filterBool : true,
-    currentTab:0,
-    currentStatus:0,
-    choice:new Array(),
-    needTitleList: ['食品饮料', '建筑建材', '居家', '鞋包', '服装', '电器', '洗护', '饮食', '鞋包1', '服装1', '电器1', '洗护1', '饮食1'],
-    needInnerList:[
-      {
-        title:'食品饮料',
-        desc: ['食品加工', '果蔬类', '食品添加剂', '水产类', '肉类', '食用油', '酿造类', '发酵类', '方便食品', '食品加工', '果蔬类', '食品添加剂', '水产类', '肉类', '食用油', '酿造类', '发酵类', '方便食品', '食品加工', '果蔬类', '食品添加剂', '水产类', '肉类', '食用油', '酿造类', '发酵类', '方便食品', '食品加工', '果蔬类', '食品添加剂', '水产类', '肉类', '食用油', '酿造类', '发酵类', '方便食品']
-      },
-      {
-        title: '建筑建材',
-        desc: ['食品加工', '果蔬类', '食品添加剂', '水产类', '肉类', '食用油', '酿造类', '发酵类', '方便食品']
-      },
-      {
-        title: '居家',
-        desc: ['食品加工', '果蔬类', '食品添加剂', '水产类', '肉类', '食用油', '酿造类', '发酵类', '方便食品']
-      },
-      {
-        title: '鞋包',
-        desc: ['食品加工', '果蔬类', '食品添加剂', '水产类', '肉类', '食用油', '酿造类', '发酵类', '方便食品']
-      },
+    loadData: [],
+    loadingText: '加载中...',
+    arr: [],
+    filterData: [],
+    needData: [{
+      title: '铝合金车轮轻铝合金车轮轻量技术量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻铝合金车轮轻量技术量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻铝合金车轮轻量技术量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    },
+    {
+      title: '铝合金车轮轻量技术',
+      price: 20,
+      year: 2,
+      label: ['金属材料', '铸造工艺']
+    }
+
     ],
-    filter:[
-      {
-        title:'发布时间',
-        desc: ['全部','近三天','近一周','近一月']
-      },
-      {
-        title: '需求状态',
-        desc: ['状态1', '状态2', '状态3', '状态4']
-      },
-    ]
+    inputValue: '',
   },
-  select(e){
-    console.log(e.currentTarget.dataset.num);
-    this.setData({
-      currentTab: e.currentTarget.dataset.num
-    })
+  // select(e){
+  //   console.log(e.currentTarget.dataset.num);
+  //   this.setData({
+  //     currentTab: e.currentTarget.dataset.num
+  //   })
     
-  },
-  filter(e) {
-    console.log(e.currentTarget.dataset.num);
-    this.setData({
-      currentStatus: e.currentTarget.dataset.num
-    })
+  // },
+  // filter(e) {
+  //   console.log(e.currentTarget.dataset.num);
+  //   this.setData({
+  //     currentStatus: e.currentTarget.dataset.num
+  //   })
 
-  },
-  filterChoice(e) {
-    var choiceK = "choice["+this.data.currentStatus+"]";
-    console.log(e.currentTarget.dataset.num);
-    this.setData({
-      [choiceK]: e.currentTarget.dataset.num
-    })
-    console.log(this.data.choice);
-    this.setData({
-      filterBool: true
-    })
+  // },
+  // filterChoice(e) {
+  //   var choiceK = "choice["+this.data.currentStatus+"]";
+  //   console.log(e.currentTarget.dataset.num);
+  //   this.setData({
+  //     [choiceK]: e.currentTarget.dataset.num
+  //   })
+  //   console.log(this.data.choice);
+  //   this.setData({
+  //     filterBool: true
+  //   })
 
-  },
-  changefilterBool(){
-    console.log(this.data.filterBool)
-    this.setData({
-      filterBool: !this.data.filterBool
+  // },
+  // changefilterBool(){
+  //   console.log(this.data.filterBool)
+  //   this.setData({
+  //     filterBool: !this.data.filterBool
+  //   })
+  // },
+  // closefilter(){
+  //   this.setData({
+  //     filterBool: true
+  //   })
+  // },
+  gotoUrl: function (e) {
+
+    var src = e.currentTarget.dataset.src;
+    wx.navigateTo({
+      url: src
     })
   },
-  closefilter(){
+  removeFilter(e) {
+    console.log(e.currentTarget.dataset.id);
     this.setData({
-      filterBool: true
+      filterData: this.data.filterData.filter((o, i) => i !== e.currentTarget.dataset.id)
+    })
+    console.log(this.data.filterData)
+  },
+  bindKeyInput: function (e) {
+    this.setData({
+      inputValue: e.detail.value
     })
   },
+  gotoDetail(){
+    wx.navigateTo({
+      url: '../needFilter/needFilter',
+    })
+  },
+  
+ 
   /**
    * 生命周期函数--监听页面加载
    */
+  
   onLoad: function (options) {
-
+    console.log(this.data.selectFilterData);
+    this.setData({
+      loadData: this.data.needData
+    })
   },
 
   /**
@@ -116,14 +179,41 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+    console.log(123)
+    wx.showNavigationBarLoading();
 
+    setTimeout(() => {
+      wx.hideNavigationBarLoading() //完成停止加载
+      this.setData({
+        loadData: this.data.needData
+      })
+      wx.stopPullDownRefresh() //停止下拉刷新
+    }, 2000)
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+    // var that = this;
+    console.log(456);
+    if (this.data.arr.length < 51) {
+      wx.showNavigationBarLoading();
 
+      setTimeout(() => {
+        // wx.hideNavigationBarLoading() //完成停止加载
+        this.data.arr = this.data.loadData.concat(this.data.needData)
+        this.setData({
+          loadData: this.data.arr
+        })
+        wx.hideNavigationBarLoading() //完成停止加载
+      }, 1000)
+    } else {
+      this.setData({
+        loadingText: '到底了'
+      })
+
+    }
   },
 
   /**

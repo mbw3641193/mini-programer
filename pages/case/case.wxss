@@ -1,0 +1,26 @@
+/* pages/case/case.wxss */
+.case{
+  margin: 10px 15px;
+  min-height: 90vh;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0, .1);
+  box-sizing: border-box;
+  padding: 15px 10px;
+}
+.case h2{
+  font-size: 16px;
+}
+.case h4{
+  font-size: 14px;
+  color: #999;
+}
+.case image{
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.case h5{
+  font-size: 14px;
+  color: #999;
+}
