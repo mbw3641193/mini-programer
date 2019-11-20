@@ -11,6 +11,11 @@
   padding-top: 10px;
   padding-bottom: 15px;
 }
+.filter h4{
+  display: block;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
 .filter text{
   display: inline-block;
   font-size: 14px;

@@ -10,7 +10,7 @@ Page({
     pageColor:[],
     selectFilterData: [],
 
-    filterData1: ['周期函数4', '周期函数5', '周期函数6'],
+    filterData1: ['周期函数4', '周期函数5周期函数5', '周期函数6'],
     pageBackgroundColor1: [],
     pageColor1: [],
     selectFilterData1: [],

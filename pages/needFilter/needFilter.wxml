@@ -9,9 +9,9 @@
 
         <h4>技术成熟度</h4>
   <view>
-  <text bindtap="changeColor1" data-id="{{index}}" data-name="{{item}}" wx:for="{{filterData1}}" wx:key="index" style="background-color:{{pageBackgroundColor1[index]}}; color:{{pageColor1[index]}}">
-          {{item}}
-        </text>
+  <h4 wx:for="{{filterData1}}" wx:key="index" >
+          <text bindtap="changeColor1" data-id="{{index}}" data-name="{{item}}" style="background-color:{{pageBackgroundColor1[index]}}; color:{{pageColor1[index]}}">{{item}}</text>
+        </h4>
         </view>
 </view>
 

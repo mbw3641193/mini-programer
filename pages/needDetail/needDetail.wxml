@@ -12,6 +12,29 @@
     <h5><image src="../../images/newIcon1_03.png" mode="widthFix"></image>发布时间：2019-10-09  </h5>
   </view>
 
+
+  <view class="needDetail-top">
+    <b>待合作</b>
+    <h4>锚泊式电子信息浮台</h4>
+    <view>
+      <text wx:for="{{personList[0].tag}}" wx:key="index">
+            {{item}}
+      </text>
+    </view>
+    <h3 style="margin-bottom:10px;">计划投入:<span>10万</span>解决期限:<span>2年</span>解决方式:<span>联合攻关</span></h3>
+    <h3><image src="../../images/newIcon1_03.png" mode="widthFix"></image>发布时间:2019-09-09</h3>
+    <h3><image src="../../images/newIcon1_03.png" mode="widthFix"></image>联系电话:13333333333</h3>
+    
+  </view>
+
+
+  <view class="needDetail-top">
+    <h4>陈绍刚<h2><image class="search" src="../../images/newIcon2_03.png" mode="widthFix"></image>专家</h2></h4>
+    
+    <h3><image src="../../images/newIcon1_03.png" mode="widthFix"></image>教授</h3>
+    
+  </view>
+
   <view class="text">- 成果说明 -</view>
 
   <view class="needDetail-top">
